@@ -2,4 +2,9 @@
     <string name="app_name">Zikr</string>
     <string name="button">Button</string>
     <string name="bgImage">bgImg</string>
+    <string name="Salam">Salam</string>
+
+    <string name="salam1">Assalamu aleykum</string>
+    <string name="salam2">va rahmatullahi</string>
+    <string name="salam3">va barakatuhu</string>
 </resources>

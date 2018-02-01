@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name">Зикр</string>
     <string name="button">Button</string>
+    <string name="salam1">Ас-саляму алейкум</string>
+    <string name="salam2">ва-рахмату-Ллахи</string>
+    <string name="salam3">ва-баракятух</string>
 </resources>
