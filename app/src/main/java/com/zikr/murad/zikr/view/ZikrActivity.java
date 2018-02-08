@@ -55,7 +55,7 @@ public class ZikrActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zikr);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, zikrs);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.spinner_textview, zikrs);
 
         spinner = findViewById(R.id.spinner);
         spinner.setAdapter(adapter);
