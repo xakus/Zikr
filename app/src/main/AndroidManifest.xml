@@ -22,8 +22,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ZikrActivity"
-            android:label="@string/title_activity_zikr"></activity>
+            android:name=".view.ZikrActivity"
+            android:label="@string/app_name" />
+
     </application>
 
 </manifest>

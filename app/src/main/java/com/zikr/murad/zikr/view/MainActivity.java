@@ -2,7 +2,6 @@ package com.zikr.murad.zikr.view;
 
 import android.content.Intent;
 import android.os.CountDownTimer;
-import android.os.Debug;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,7 +9,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.zikr.murad.zikr.R;
-import com.zikr.murad.zikr.ZikrActivity;
 
 public class MainActivity extends AppCompatActivity {
     private TextView salam1;
@@ -30,22 +28,27 @@ public class MainActivity extends AppCompatActivity {
             public void onTick(long millisUntilFinished) {
                 float t=millisUntilFinished / 1000;
                 Log.d("time ","seconds remaining: " + millisUntilFinished / 1000);
-                if(7==t){
+                if(4==t){
                         salam1.setVisibility(View.VISIBLE);
                     }
-                    if(5==t){
+                    if(3==t){
                         salam2.setVisibility(View.VISIBLE);
                     }
-                    if(3==t){
+                    if(2==t){
                         salam3.setVisibility(View.VISIBLE);
                     }
             }
 
             public void onFinish() {
-                Intent intent =new Intent(MainActivity.this, ZikrActivity.class);
-                startActivity(intent);
+                finish();
             }
         }.start();
 
+    }
+    @Override
+    public void finish(){
+        Intent intent =new Intent(MainActivity.this, ZikrActivity.class);
+        startActivity(intent);
+        super.finish();
     }
 }
