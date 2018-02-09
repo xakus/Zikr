@@ -8,4 +8,4 @@
     android:padding="5dip"
     android:textAlignment="center"
     android:textColor="@color/colorYellow"
-    android:textSize="12sp" />
+    android:textSize="16sp" />

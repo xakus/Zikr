@@ -13,7 +13,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:adjustViewBounds="true"
-        android:background="@drawable/tasbih2"
+        android:background="@drawable/flag2"
         android:contentDescription="@string/bgImage"
         android:cropToPadding="true"
         android:scaleType="centerInside"
