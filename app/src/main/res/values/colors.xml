@@ -4,8 +4,8 @@
     <color name="colorPrimaryDark">#010101</color>
     <color name="colorAccent">#ff4081</color>
     <color name="colorYellow">#ffff00</color>
-    <color name="colorButton">#5e9dff00</color>
-    <color name="colorView">#5e00eeff</color>
+    <color name="colorButton">#9a3cff00</color>
+    <color name="colorView">#68000000</color>
     <color name="colorSalam">#ffffff</color>
     <color name="colorSalamBg">#32000000</color>
 </resources>

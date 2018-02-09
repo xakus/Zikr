@@ -1,8 +1,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/tasbih"
+    android:background="@drawable/tasbih2"
     android:backgroundTintMode="add"
     android:gravity="center_horizontal"
     android:orientation="vertical"
@@ -15,22 +16,57 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.255"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_sync_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_media_previous" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_media_next" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_media_play" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0"
         android:orientation="horizontal">
 
         <Spinner
             android:id="@+id/spinner2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            />
+            android:layout_weight="1" />
 
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="11dp"/>
+            android:textSize="11dp" />
     </LinearLayout>
 
     <TextView
@@ -39,10 +75,19 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@color/colorView"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="@string/pref_description_social_recommendations"
+        android:textAlignment="center"
+        android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/colorYellow"
-        android:textSize="12sp" />
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_weight="0" />
 
     <TextView
         android:id="@+id/textView2"
@@ -50,20 +95,63 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@color/colorView"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="TextView"
+        android:textAlignment="center"
+        android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@color/colorYellow"
-        android:textSize="12sp" />
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/button"
+    <Space
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="@color/colorButton"
-        android:fontFamily="@font/digitaldismay"
-        android:text="123"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="80sp"
-        android:typeface="normal" />
+        android:layout_height="3dp"
+        android:layout_weight="0" />
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.Material.ProgressBar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0"
+            android:background="@color/colorView"
+            android:backgroundTintMode="src_over"
+            android:max="100"
+            android:progress="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_weight="0"
+            android:background="@drawable/oval"
+            android:fontFamily="@font/digitaldismay"
+            android:scaleType="fitCenter"
+            android:text="999999"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorButton"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/button" />
+
+    </android.support.constraint.ConstraintLayout>
+
 </LinearLayout>

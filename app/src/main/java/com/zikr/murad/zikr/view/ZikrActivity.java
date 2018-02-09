@@ -57,7 +57,7 @@ public class ZikrActivity extends AppCompatActivity {
         setContentView(R.layout.activity_zikr);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.spinner_textview, zikrs);
 
-        spinner = findViewById(R.id.spinner);
+        spinner = findViewById( R.id.spinner);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
